@@ -112,6 +112,17 @@ print('------------------------------------------')
 lis = driver.find_element_by_xpath("/html/body/div/ul[2]/li[1]")
 print(lis.text)
 
+"""
+常用的xpat写法
+dr.find_element_by_xpath("//*[@id='kw']")
+dr.find_element_by_xpath("//*[@name='wd']")
+dr.find_element_by_xpath("//input[@class='s_ipt']")
+dr.find_element_by_xpath("/html/body/form/span/input")
+dr.find_element_by_xpath("//span[@class='soutu-btn']/input")
+dr.find_element_by_xpath("//form[@id='form']/span/input")
+dr.find_element_by_xpath("//input[@id='kw' and @name='wd']")
+"""
+
 print('------------------------------------------')
 # 8 通过css选择器查找
 # ====通过css选择器
